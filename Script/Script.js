@@ -75,5 +75,11 @@ document.getElementById('validateButton').addEventListener('click', function () 
    
     if (isValid) {
         alert('Valid Employee Details');
+         form.reset(); // Reset the form
+        clearError('employeeName');
+        clearError('employeeId');
+        clearError('employeeEmail');
+        clearError('baseLocation');
+        clearError('companyName');
     }
 });

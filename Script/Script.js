@@ -13,7 +13,7 @@ document.getElementById('validateButton').addEventListener('click', function () 
             errorElement.id = inputId + 'Error';
             errorElement.style.color = 'red';
             errorElement.style.fontSize = '12px';
-            errorElement.style.marginTop = '5px';
+            //errorElement.style.marginTop = '5px';
             document.getElementById(inputId).insertAdjacentElement('afterend', errorElement);
         }
         errorElement.textContent = message;
@@ -73,13 +73,11 @@ document.getElementById('validateButton').addEventListener('click', function () 
     }
 
    
+   var form = document.getElementById("employeeForm");
+    // Show success message if all validations pass
     if (isValid) {
-        alert('Valid Employee Details');
-         form.reset(); // Reset the form
-        clearError('employeeName');
-        clearError('employeeId');
-        clearError('employeeEmail');
-        clearError('baseLocation');
-        clearError('companyName');
+        alert('Valid Employee Details'); 
+        form.reset();       
+        
     }
 });

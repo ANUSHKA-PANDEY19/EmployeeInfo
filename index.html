@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Validation</title>
+    <link rel="stylesheet" href="Style/Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Validation Page</h1>
+        <form id="employeeForm">
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" name="employeeName" required>
+
+            <label for="employeeId">Employee ID:</label>
+            <input type="number" id="employeeId" name="employeeId" required>
+
+            <label for="employeeEmail">Employee Email ID:</label>
+            <input type="email" id="employeeEmail" name="employeeEmail" required>
+
+            <label for="baseLocation">Base Location:</label>
+            <input type="text" id="baseLocation" name="baseLocation" required>
+
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required>
+
+            <button type="button" id="validateButton">Submit</button>
+        </form>
+    </div>
+    <script src="Script/Script.js"></script>
+</body>
+</html>
